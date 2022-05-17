@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vuex | 自我养成笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./logo.jpg">
+    <meta name="description" content="跑不过时间，也跑不赢通胀">
+    
+    <link rel="preload" href="./assets/css/0.styles.1b524b13.css" as="style"><link rel="preload" href="./assets/js/app.88b102f2.js" as="script"><link rel="preload" href="./assets/js/2.4ffcc04d.js" as="script"><link rel="preload" href="./assets/js/29.838eb77f.js" as="script"><link rel="prefetch" href="./assets/js/10.6f612d9e.js"><link rel="prefetch" href="./assets/js/11.7247d825.js"><link rel="prefetch" href="./assets/js/12.f18d6b16.js"><link rel="prefetch" href="./assets/js/13.02e2c852.js"><link rel="prefetch" href="./assets/js/14.79950ab2.js"><link rel="prefetch" href="./assets/js/15.0aff5713.js"><link rel="prefetch" href="./assets/js/16.511d1300.js"><link rel="prefetch" href="./assets/js/17.cae11fe3.js"><link rel="prefetch" href="./assets/js/18.e6ce0b64.js"><link rel="prefetch" href="./assets/js/19.7b89e1f4.js"><link rel="prefetch" href="./assets/js/20.f0426bd5.js"><link rel="prefetch" href="./assets/js/21.a1e31b28.js"><link rel="prefetch" href="./assets/js/22.ab9290ae.js"><link rel="prefetch" href="./assets/js/23.6c3ab5c6.js"><link rel="prefetch" href="./assets/js/24.aafe1498.js"><link rel="prefetch" href="./assets/js/25.db256c3d.js"><link rel="prefetch" href="./assets/js/26.570aea8e.js"><link rel="prefetch" href="./assets/js/27.a67211d6.js"><link rel="prefetch" href="./assets/js/28.7bda1f9c.js"><link rel="prefetch" href="./assets/js/3.2316c63e.js"><link rel="prefetch" href="./assets/js/30.58ef4f36.js"><link rel="prefetch" href="./assets/js/31.290c30aa.js"><link rel="prefetch" href="./assets/js/32.432ad5a5.js"><link rel="prefetch" href="./assets/js/33.825900f3.js"><link rel="prefetch" href="./assets/js/34.e8d225f1.js"><link rel="prefetch" href="./assets/js/35.7e3c2df4.js"><link rel="prefetch" href="./assets/js/36.3d82f2ca.js"><link rel="prefetch" href="./assets/js/37.583a1c2a.js"><link rel="prefetch" href="./assets/js/38.406b4ce0.js"><link rel="prefetch" href="./assets/js/39.9b3466aa.js"><link rel="prefetch" href="./assets/js/4.35addd36.js"><link rel="prefetch" href="./assets/js/40.98930494.js"><link rel="prefetch" href="./assets/js/41.2c4cea5f.js"><link rel="prefetch" href="./assets/js/42.c40d0118.js"><link rel="prefetch" href="./assets/js/5.ffc87443.js"><link rel="prefetch" href="./assets/js/6.5bff1b90.js"><link rel="prefetch" href="./assets/js/7.43ded6da.js"><link rel="prefetch" href="./assets/js/8.42fd9524.js"><link rel="prefetch" href="./assets/js/9.541899c3.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.1b524b13.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/./" class="home-link router-link-active"><!----> <span class="site-name">自我养成笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/./" class="nav-link">
+  概括
+</a></div><div class="nav-item"><a href="/./Javascript/" class="nav-link">
+  前端学习
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./Vue/Vue2.0/" class="nav-link">
+  Vue2.0
+</a></li><li class="dropdown-item"><!----> <a href="/./Vue/Vue3.0/" class="nav-link">
+  Vue3.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="扩展技能" class="dropdown-title"><span class="title">扩展技能</span> <span class="arrow down"></span></button> <button type="button" aria-label="扩展技能" class="mobile-dropdown-title"><span class="title">扩展技能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./extra_skill/Markdown/" class="nav-link">
+  Markdown的基本使用
+</a></li><li class="dropdown-item"><!----> <a href="/./extra_skill/git/" class="nav-link">
+  git和github的使用
+</a></li><li class="dropdown-item"><!----> <a href="/./extra_skill/moduel/" class="nav-link">
+  前端模块化的理解以及使用
+</a></li><li class="dropdown-item"><!----> <a href="/./extra_skill/linux/" class="nav-link">
+  linux的基本使用（待完善）
+</a></li><li class="dropdown-item"><!----> <a href="/./extra_skill/webpack/" class="nav-link">
+  webpack的基本使用
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小项目" class="dropdown-title"><span class="title">小项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="小项目" class="mobile-dropdown-title"><span class="title">小项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./item/XiaomiShop/" class="nav-link">
+  小米商城
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          在线工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://macwk.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mac软件
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://greasyfork.org/zh-CN" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  油猴脚本
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://chrome.zzzmh.cn/#/index" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  极简插件
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/./" class="nav-link">
+  概括
+</a></div><div class="nav-item"><a href="/./Javascript/" class="nav-link">
+  前端学习
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./Vue/Vue2.0/" class="nav-link">
+  Vue2.0
+</a></li><li class="dropdown-item"><!----> <a href="/./Vue/Vue3.0/" class="nav-link">
+  Vue3.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="扩展技能" class="dropdown-title"><span class="title">扩展技能</span> <span class="arrow down"></span></button> <button type="button" aria-label="扩展技能" class="mobile-dropdown-title"><span class="title">扩展技能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./extra_skill/Markdown/" class="nav-link">
+  Markdown的基本使用
+</a></li><li class="dropdown-item"><!----> <a href="/./extra_skill/git/" class="nav-link">
+  git和github的使用
+</a></li><li class="dropdown-item"><!----> <a href="/./extra_skill/moduel/" class="nav-link">
+  前端模块化的理解以及使用
+</a></li><li class="dropdown-item"><!----> <a href="/./extra_skill/linux/" class="nav-link">
+  linux的基本使用（待完善）
+</a></li><li class="dropdown-item"><!----> <a href="/./extra_skill/webpack/" class="nav-link">
+  webpack的基本使用
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小项目" class="dropdown-title"><span class="title">小项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="小项目" class="mobile-dropdown-title"><span class="title">小项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./item/XiaomiShop/" class="nav-link">
+  小米商城
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          在线工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://macwk.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mac软件
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://greasyfork.org/zh-CN" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  油猴脚本
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://chrome.zzzmh.cn/#/index" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  极简插件
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuex"><a href="#vuex" class="header-anchor">#</a> Vuex</h1> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p>vuex给vue组件控制状态和监控状态的插件，相当于一个管理变量的一个管家，这有什么好处呢？如果组件与组件之间的关系离的远而不仅仅只是子传父或者父传子，这样的传值就会很复杂，我们可以把想共享的变量放到一个公共的对象中，如何组件都可以访问的到的，我们就能很好的解决这个问题，所以有了vuex。</p> <p>vuex有5个核心</p> <ul><li>state</li> <li>view</li> <li>actions</li> <li>getters</li> <li>Mutations</li></ul> <p>数据驱动视图，而视图交互产生的事件又驱动数据</p> <p><img src="https://s2.loli.net/2022/01/10/Pq3W79CcQEzFNMb.png" alt="Pq3W79CcQEzFNMb"></p> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i --save vuex 			//安装到运行时
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="vuex的使用"><a href="#vuex的使用" class="header-anchor">#</a> vuex的使用</h2> <p>最简单的vuex的程序</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//index.js</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token comment">//需要共享的变量放这里</span>
+  <span class="token punctuation">}</span>，
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span><span class="token punctuation">{</span>
+  	<span class="token comment">//需要处理的变量都要经过这个，否则devtools工具无法监控</span>
+  	<span class="token comment">//这个会默认传一个state过来</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">actions</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">modules</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">getters</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token comment">//类似于computed属性，里面定义是一个函数，可以当作一个属性去使用</span>
+    <span class="token comment">//在这里写方法都会默认传两个参数过来state和getters本身</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> store			<span class="token comment">//把vuex导出去</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//APP.vue文件中</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'.store'</span>
+<span class="token comment">//挂载到vue中vue.protype.$store就可以使用变量</span>
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  store<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="mutations的传参"><a href="#mutations的传参" class="header-anchor">#</a> mutations的传参</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;HelloWorld&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">msg</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">increase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">5</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;increase&quot;</span><span class="token punctuation">,</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>		<span class="token comment">//组件可以传值给mutations</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">decrease</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">3</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;decrease&quot;</span><span class="token punctuation">,</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">increase</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>			<span class="token comment">//第二个参数则为传过来的参数</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">+=</span>num<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">decrease</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">-=</span>num<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="mutations的传参风格。"><a href="#mutations的传参风格。" class="header-anchor">#</a> mutations的传参风格。</h3> <p>可以把mutations分成两部分，一部分是事件类型，一个是回调函数</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token literal-property property">mutations</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token function">incretment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token comment">//改变state的参数</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>					<span class="token comment">//incretment可以看成事件类型，(){}看成回调函数</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>传一个对象过去</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;HelloWorld&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">msg</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">increase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">5</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span><span class="token string">&quot;increase&quot;</span><span class="token punctuation">,</span>
+        num															<span class="token comment">//对象传值风格</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>		<span class="token comment">//组件可以传值给mutations</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">decrease</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">3</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;decrease&quot;</span><span class="token punctuation">,</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">increase</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>			<span class="token comment">//第二个参数则为传过来的参数</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">+</span>payload<span class="token punctuation">.</span>num<span class="token punctuation">;</span>				<span class="token comment">//一个对象接收过来然后使用</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">decrease</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">-</span>num<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="getters"><a href="#getters" class="header-anchor">#</a> getters</h3> <blockquote><p>什么时候使用getters？state的数据需要处理后在展示的时候可以使用getters，类似于computed。每一个getters中的函数都会传过来两个主要的参数，一个是state，还有一个是getters，getters这个参数就是这个getters需要依赖别的getters就可以使用这个参数</p></blockquote> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token literal-property property">getters</span><span class="token operator">:</span><span class="token punctuation">{</span>
+  
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="actions"><a href="#actions" class="header-anchor">#</a> Actions</h3> <p>![image-20220303120105482](/Users/happy/Library/Application Support/typora-user-images/image-20220303120105482.png)</p> <blockquote><p>如上图所示，只有经过异步操作我们才需要使用action，如果是同步的话就直接使用mutations就可以了</p></blockquote> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//./store/index.js文件</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">{</span>
+      <span class="token comment">//这里写全局状态</span>
+      <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token comment">//同步操作状态的话需要经过mutations来改变state</span>
+    <span class="token function">increment</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">actions</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token comment">//异步操作状态的话需要经过action来调用mutation的方法然后再改变state</span>
+    <span class="token function">incrementAction</span><span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      context<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;increment&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//其他组件文件</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;increment&quot;</span><span class="token punctuation">)</span> <span class="token comment">//提交一个incement</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">incrementAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">dispath</span><span class="token punctuation">(</span><span class="token string">&quot;incrementAction&quot;</span><span class="token punctuation">,</span><span class="token punctuation">[</span>第二个可以传参数<span class="token punctuation">]</span><span class="token punctuation">)</span>   <span class="token comment">//提交action</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="单一状态树"><a href="#单一状态树" class="header-anchor">#</a> 单一状态树</h3> <blockquote><p>vuex建议使用单一状态树，意思就是把全部组件的state保存到一个store中。这个可能会有什么坏处呢，就是所有的组件的状态都放在一个store里面就会导致这个store很难去维护。</p></blockquote> <h4 id="解决难维护的问题"><a href="#解决难维护的问题" class="header-anchor">#</a> 解决难维护的问题</h4> <blockquote><p>我们这个提取每个组件的状态，然后在导入到store里，就可以分模块的取管理我们组件的状态</p></blockquote> <h3 id="moduel"><a href="#moduel" class="header-anchor">#</a> moduel</h3> <p>由于vuex是单一状态树，所有的state都放到一个对象中，导致后续维护起来困难。这时候就有moduel的概念。</p> <p>每一个模块都有vuex的核心。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//home.js.  home里的状态管理</span>
+<span class="token keyword">const</span> homeModuel <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">namespace</span><span class="token operator">:</span><span class="token boolean">true</span>   <span class="token comment">//这个可以指定模块中的action</span>
+  <span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">{</span>
+      
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token literal-property property">actions</span><span class="token operator">:</span><span class="token punctuation">{</span>
+     
+   <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> homeModuel
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//./store/index.js文件</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span>
+<span class="token keyword">import</span> homeModuel <span class="token keyword">from</span> <span class="token string">&quot;./home.js&quot;</span> <span class="token comment">//导入home状态模块</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">moduel</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    homeModuel
+  <span class="token punctuation">}</span>
+  <span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">{</span>
+      <span class="token comment">//这里写全局状态</span>
+      <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token comment">//同步操作状态的话需要经过mutations来改变state</span>
+    <span class="token function">increment</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">actions</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token comment">//异步操作状态的话需要经过action来调用mutation的方法然后再改变state</span>
+    <span class="token function">incrementAction</span><span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      context<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;increment&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.88b102f2.js" defer></script><script src="./assets/js/2.4ffcc04d.js" defer></script><script src="./assets/js/29.838eb77f.js" defer></script>
+  </body>
+</html>
